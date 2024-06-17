@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Index";
+}
+@model List<ProductViewModel>
+
+<h1 class="my-4">
+    Listado de productos
+</h1>
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Categoria</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var producto in Model)
+                {
+                    <tr>
+                        <td>@producto.Nombre</td>
+                        <td>@producto.Descripcion</td>
+                        <td>@producto.Precio</td>
+                        <td>@producto.Stock</td>
+                        <td>@producto.Categoria</td>
+                        <td>
+                            <a href="@Url.Action("DescargarPdf", new {id = producto.Id})" class="btn btn-dark">Descargar
+                                PDF</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
