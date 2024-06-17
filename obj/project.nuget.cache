@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q+TaWKDKpiop9Z44+/6m9tFY4w6sTXUxO2Xp4pRC86Yz/BItcaVw+05ca8YHHvPcNWk43AQ3t0nsQ1P4oZdWEA==",
+  "success": true,
+  "projectFilePath": "/Users/johnvaller/Desktop/PDF_Generator/PDF_Generator.csproj",
+  "expectedPackageFiles": [
+    "/Users/johnvaller/.nuget/packages/questpdf/2024.6.1/questpdf.2024.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}
